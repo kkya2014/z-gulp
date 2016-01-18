@@ -69,7 +69,15 @@ var gulp = require('gulp'), //基础库
             'src/co-modules/js/native/socketManager.js',
             'src/co-modules/js/native/storage.js',
             'src/co-modules/js/native/zip.js',
-            'src/co-modules/js/debug.js'
+            'src/co-modules/js/debug.js',
+            'src/co-modules/js/debug/device.js',
+            'src/co-modules/js/debug/os.js',
+            'src/co-modules/js/debug/app.js',
+            'src/co-modules/js/debug/dom.js',
+            'src/co-modules/js/debug/window.js',
+            'src/co-modules/js/debug/http.js',
+            'src/co-modules/js/debug/storage.js',
+            'src/co-modules/js/debug/screen.js'
         ]
     },
     co = {
@@ -282,7 +290,7 @@ gulp.task('co-font', function(cb) {
 });
 
 //co处理
-gulp.task('build-co', gulp.series('cleanCo', 'co-native', 'co-scripts', 'co-dom', 'co-zepto', 'co-css', 'co-font'));
+gulp.task('build-co', gulp.series('cleanCo', 'co-native', 'co-scripts', 'co-zepto', 'co-css', 'co-font'));
 
 // 清空dist样式
 gulp.task('cleanDist', function(cb) {

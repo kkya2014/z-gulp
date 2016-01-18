@@ -26,17 +26,22 @@
             </div>
         </header>
             <a class="button button-block button-rounded button-primary button-large">添加抽屉</a>
-            
-        <script src="../dist/js/dom.js"></script>
+            <a class="button button-block button-rounded button-primary button-large">关闭自己</a>
+
+    <script src="../dist/js/native.js"></script>
+    <script src="../dist/js/dom.js"></script>
     <script src="../dist/js/co.js"></script>
     </body>
      <script>
-            var win = app.window.create();
+            var win = app.createWindow();
+            var view = app.currentView();
             domReady(function(require){
                 $('.button').button(function(btn,vet){
                     var text = btn.innerHTML;
                     if(text == '打开一个新窗口'){
                         win.open('native/view.html');
+                    }else if(text == '关闭自己'){
+                        view.back()
                     }else{
                         var slideLayoutParams = {
 
