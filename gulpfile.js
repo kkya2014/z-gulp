@@ -480,7 +480,6 @@ gulp.task('watch', function(cb) {
         if (next != -1) {
             destPaht = destPaht + file.path.substring(ex + 9, ex + 9 + next) + '/';
         }
-        
         console.log(destPaht);
         gulp.src(file.path)
             .pipe(gulp.dest(destPaht))
