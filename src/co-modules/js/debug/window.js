@@ -5,7 +5,12 @@
 		var key = arguments[0][1];
 		if (key == 'openWindow') {
 			var windowname = args[0]
-			var url = this.getPageDir() + args[2]
+			var type = args[1]
+			var url = args[2]
+			if (type == 0) {
+				url = this.getPageDir() + args[2]
+			}
+			// var js = "openWindow('" + windowname + "','" + url + "','" + type + "')"
 			var js = "openWindow('" + windowname + "','" + url + "')"
 			this.postMessage(js);
 		} else if (key == 'closeSelf') {

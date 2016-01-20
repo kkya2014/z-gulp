@@ -174,14 +174,14 @@ input {
 }
 /* === icon === */
 @font-face {
-  font-family: FontAwesome;
+  font-family: uiicons;
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ui.ttf") format("truetype");
 }
 .ui-icon {
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: uiicons;
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
@@ -5080,7 +5080,7 @@ input[type="submit"].ui-active:enabled,
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: uiicons;
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
@@ -5091,8 +5091,6 @@ input[type="submit"].ui-active:enabled,
 .ui-nav-bar .ui-nav-bar-left {
   float: left;
   margin-left: 10px;
-  font-size: 30px;
-  padding-top: 5px;
 }
 .ui-nav-bar .ui-nav-bar-right {
   float: right;

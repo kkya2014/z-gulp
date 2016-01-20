@@ -124,8 +124,8 @@
     window.addEventListener('message', function(e) {
         eval(e.data);
     }, false);
-    var rootName = GetQueryString('pageId') || 'request/request.html';
-    var rootUrl = GetQueryString('pageId') || 'request/request.html';
+    var rootName = GetQueryString('pageId') || 'native/native.html';
+    var rootUrl = GetQueryString('pageId') || 'native/native.html';
     openWindow(rootName, rootUrl, true);
 
     function strEncode(str) {
