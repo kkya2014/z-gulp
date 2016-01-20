@@ -468,7 +468,9 @@ gulp.task('cleanDj', function(cb) {
 });
 
 gulp.task('watch', function(cb) {
-    var server = livereload();
+    var server = livereload({
+        port: 35720
+    });
     livereload.listen();
     var watcher = gulp.watch(paths.source.examples + '**/*.*');
     watcher.on('change', function(file) {
